@@ -1,6 +1,5 @@
 import express from "express";
-import asyncHandler from "express-async-handler";
-import Product from "../models/productModel.js";
+import {getProducts,  getProductById } from '../controllers/productController.js'
 const router = express.Router();
 
 // @desc    Fetch all products
@@ -14,4 +13,4 @@ router.get('/', getProducts)
 router.get('/:id', getProductById)
 
 export default router
-Footer
+
